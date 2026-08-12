@@ -47,16 +47,14 @@
   <nav class="navbar" id="navbar" role="navigation" aria-label="Navegación principal">
     <div class="container">
       <a href="#inicio" class="nav-logo" aria-label="Inicio">
-        &lt;<span>ILA</span>/&gt;
+        Isabella <span>✺</span>
       </a>
 
       <div class="nav-links" id="nav-links">
-        <a href="#inicio">Inicio</a>
         <a href="#sobre-mi">Sobre mí</a>
-        <a href="#habilidades">Habilidades</a>
         <a href="#proyectos">Proyectos</a>
         <a href="#trayectoria">Trayectoria</a>
-        <a href="#contacto">Contacto</a>
+        <a href="#contacto" class="nav-contact-link">Hablemos <i class="ri-arrow-right-up-line"></i></a>
       </div>
 
       <button class="menu-btn" id="menu-btn" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-links">
@@ -84,7 +82,7 @@
           </h1>
 
           <p class="hero-title hero-reveal hero-reveal-delay-2">
-            <span id="typing-text"></span><span class="typing-cursor" aria-hidden="true"></span>
+            Desarrolladora Full-Stack en formación
           </p>
 
           <p class="hero-tagline hero-reveal hero-reveal-delay-3">
@@ -179,22 +177,10 @@
           <h2 class="section-title">Construyendo software real,<br>desde la formación.</h2>
 
           <p>
-            Soy aprendiz de <strong>Análisis y Desarrollo de Software (ADSO)</strong> en el 
-            <strong>SENA — Centro Tecnológico de la Amazonía</strong>. Mi enfoque no es solo 
-            aprender tecnologías: es construir <strong>sistemas full-stack completos</strong> 
-            que resuelvan problemas reales, con frontend, backend y base de datos integrados.
+            Soy aprendiz de <strong>ADSO</strong> en el <strong>SENA — Centro Tecnológico de la Amazonía</strong>. Me enfoco en construir <strong>sistemas full-stack</strong> que resuelvan problemas reales, conectando bases de datos, backend y frontend.
           </p>
           <p>
-            He desarrollado proyectos que van desde <strong>gestión de rutas de recolección 
-            con geolocalización</strong> hasta <strong>plataformas financieras con análisis 
-            potenciado por IA</strong>. Trabajo con una filosofía de buenas prácticas: 
-            <strong>arquitectura limpia y documentación 
-            técnica tipo IEEE</strong>.
-          </p>
-          <p>
-            Parte de mi flujo de trabajo incluye <strong>coordinar desarrollo con asistentes 
-            de IA</strong>, lo que me permite iterar más rápido y mantener estándares de 
-            calidad profesionales en cada línea de código.
+            He desarrollado desde <strong>plataformas financieras con IA</strong> hasta aplicaciones móviles con geolocalización, trabajando siempre con una filosofía de <strong>arquitectura limpia y buenas prácticas</strong>.
           </p>
 
           <div class="about-stats">
@@ -225,69 +211,87 @@
         Herramientas y tecnologías con las que construyo soluciones de extremo a extremo.
       </p>
 
-      <div class="skills-grid">
+      <div class="bento-grid">
         <!-- Backend -->
-        <div class="skill-card reveal">
-          <div class="skill-card-icon">
-            <i class="ri-server-line"></i>
+        <div class="bento-card backend-card reveal">
+          <div class="bento-content">
+            <div class="bento-header">
+              <div class="bento-icon">
+                <i class="ri-server-line"></i>
+              </div>
+              <h3>Desarrollo Backend</h3>
+            </div>
+            <p class="bento-desc">Arquitectura robusta, APIs RESTful y bases de datos relacionales y espaciales estructuradas para alto rendimiento.</p>
+            <div class="bento-tags">
+              <span class="skill-tag"><i class="ri-nodejs-line"></i> Node.js</span>
+              <span class="skill-tag">Express</span>
+              <span class="skill-tag"><i class="ri-code-box-line"></i> PHP</span>
+              <span class="skill-tag"><i class="ri-fire-line"></i> Laravel</span>
+              <span class="skill-tag"><i class="ri-database-2-line"></i> PostgreSQL</span>
+              <span class="skill-tag"><i class="ri-map-pin-line"></i> PostGIS</span>
+              <span class="skill-tag">MySQL</span>
+            </div>
           </div>
-          <h3>Backend</h3>
-          <div class="skill-tags">
-            <span class="skill-tag">Node.js</span>
-            <span class="skill-tag">Express</span>
-            <span class="skill-tag">PHP</span>
-            <span class="skill-tag">Laravel</span>
-            <span class="skill-tag">PostgreSQL</span>
-            <span class="skill-tag">PostGIS</span>
-            <span class="skill-tag">MySQL</span>
-          </div>
+          <div class="bento-glow"></div>
         </div>
 
         <!-- Frontend -->
-        <div class="skill-card reveal reveal-delay-1">
-          <div class="skill-card-icon">
-            <i class="ri-layout-masonry-line"></i>
+        <div class="bento-card frontend-card reveal reveal-delay-1">
+          <div class="bento-content">
+            <div class="bento-header">
+              <div class="bento-icon">
+                <i class="ri-layout-masonry-line"></i>
+              </div>
+              <h3>Frontend & Móvil</h3>
+            </div>
+            <p class="bento-desc">Interfaces interactivas, dinámicas y diseño offline-first para aplicaciones modernas.</p>
+            <div class="bento-tags tags-vertical">
+              <span class="skill-tag"><i class="ri-reactjs-line"></i> React</span>
+              <span class="skill-tag"><i class="ri-smartphone-line"></i> React Native</span>
+              <span class="skill-tag"><i class="ri-javascript-line"></i> JavaScript</span>
+              <span class="skill-tag">Tailwind CSS</span>
+              <span class="skill-tag"><i class="ri-html5-line"></i> HTML & CSS</span>
+            </div>
           </div>
-          <h3>Frontend</h3>
-          <div class="skill-tags">
-            <span class="skill-tag">React</span>
-            <span class="skill-tag">React Native</span>
-            <span class="skill-tag">HTML</span>
-            <span class="skill-tag">CSS</span>
-            <span class="skill-tag">JavaScript</span>
-            <span class="skill-tag">Blade</span>
-            <span class="skill-tag">Tailwind</span>
-          </div>
+          <div class="bento-glow"></div>
         </div>
 
         <!-- Tools -->
-        <div class="skill-card reveal reveal-delay-2">
-          <div class="skill-card-icon">
-            <i class="ri-tools-line"></i>
+        <div class="bento-card tools-card reveal reveal-delay-2">
+          <div class="bento-content">
+            <div class="bento-header">
+              <div class="bento-icon">
+                <i class="ri-tools-line"></i>
+              </div>
+              <h3>Herramientas</h3>
+            </div>
+            <div class="bento-tags">
+              <span class="skill-tag"><i class="ri-github-fill"></i> Git & GitHub</span>
+              <span class="skill-tag">pgAdmin</span>
+              <span class="skill-tag">draw.io</span>
+              <span class="skill-tag">VS Code</span>
+            </div>
           </div>
-          <h3>Herramientas</h3>
-          <div class="skill-tags">
-            <span class="skill-tag">Git</span>
-            <span class="skill-tag">GitHub</span>
-            <span class="skill-tag">pgAdmin</span>
-            <span class="skill-tag">draw.io</span>
-            <span class="skill-tag">VS Code</span>
-          </div>
+          <div class="bento-glow"></div>
         </div>
 
         <!-- Practices -->
-        <div class="skill-card reveal reveal-delay-3">
-          <div class="skill-card-icon">
-            <i class="ri-shield-check-line"></i>
+        <div class="bento-card practices-card reveal reveal-delay-3">
+          <div class="bento-content">
+            <div class="bento-header">
+              <div class="bento-icon">
+                <i class="ri-shield-check-line"></i>
+              </div>
+              <h3>Prácticas</h3>
+            </div>
+            <div class="bento-tags">
+              <span class="skill-tag"><i class="ri-shield-star-line"></i> Clean Architecture</span>
+              <span class="skill-tag">Patrón MVVM</span>
+              <span class="skill-tag"><i class="ri-wifi-off-line"></i> Offline-first</span>
+              <span class="skill-tag">IEEE 830</span>
+            </div>
           </div>
-          <h3>Prácticas</h3>
-          <div class="skill-tags">
-            <span class="skill-tag">Clean Architecture</span>
-            <span class="skill-tag">MVVM</span>
-            <span class="skill-tag">Offline-first</span>
-            <span class="skill-tag">IEEE 830/SRS</span>
-            <span class="skill-tag">Documentación</span>
-          </div>
+          <div class="bento-glow"></div>
         </div>
       </div>
     </div>
@@ -306,16 +310,16 @@
       <div class="projects-grid">
         <!-- CollTrash -->
         <article class="project-card reveal">
-          <div class="project-image">
-            <div class="project-image-content">
-              <i class="ri-route-line project-icon" aria-hidden="true"></i>
-              <span class="project-image-label">Sistema de gestión de rutas</span>
+          <div class="project-header">
+            <div class="project-icon-box">
+              <i class="ri-route-line"></i>
             </div>
-            <div class="project-overlay"></div>
+            <div class="project-title-wrapper">
+              <h3 class="project-name">CollTrash</h3>
+              <span class="project-subtitle">Gestión de recolección de basuras</span>
+            </div>
           </div>
           <div class="project-body">
-            <h3 class="project-name">CollTrash</h3>
-            <span class="project-subtitle">Gestión de recolección de basuras</span>
             <p class="project-desc">
               Sistema integral para la gestión de rutas de recolección de basuras en 
               Neiva, Huila. Incluye geolocalización con PostGIS, panel web React y 
@@ -328,27 +332,93 @@
               <span class="stack-badge">React</span>
               <span class="stack-badge">React Native</span>
             </div>
-            <div class="project-links">
-              <a href="https://github.com/isabellalopera75-cmd/CollTrash" target="_blank"
-                 rel="noopener noreferrer" class="project-link">
-                <i class="ri-github-fill"></i> Ver código
-              </a>
+          </div>
+          <div class="project-footer">
+            <a href="https://github.com/isabellalopera75-cmd/CollTrash" target="_blank"
+               rel="noopener noreferrer" class="project-link">
+              <i class="ri-github-fill"></i> Ver código
+            </a>
+          </div>
+        </article>
+
+        <!-- Juicios Evaluativos -->
+        <article class="project-card reveal reveal-delay-1">
+          <div class="project-header">
+            <div class="project-icon-box">
+              <i class="ri-file-chart-line"></i>
             </div>
+            <div class="project-title-wrapper">
+              <h3 class="project-name">Juicios Evaluativos</h3>
+              <span class="project-subtitle">Dashboard de evaluación</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <p class="project-desc">
+              Sistema web para importar reportes en Excel de Sofia Plus y visualizar 
+              el progreso de juicios evaluativos de los aprendices mediante KPIs y 
+              gráficas interactivas.
+            </p>
+            <div class="project-stack">
+              <span class="stack-badge">PHP</span>
+              <span class="stack-badge">MySQL</span>
+              <span class="stack-badge">JavaScript</span>
+              <span class="stack-badge">Chart.js</span>
+              <span class="stack-badge">PhpSpreadsheet</span>
+            </div>
+          </div>
+          <div class="project-footer">
+            <a href="https://github.com/isabellalopera75-cmd/sistema_juicios" target="_blank"
+               rel="noopener noreferrer" class="project-link">
+              <i class="ri-github-fill"></i> Ver código
+            </a>
+          </div>
+        </article>
+
+        <!-- ImpulWeb -->
+        <article class="project-card reveal reveal-delay-2">
+          <div class="project-header">
+            <div class="project-icon-box">
+              <i class="ri-bar-chart-grouped-line"></i>
+            </div>
+            <div class="project-title-wrapper">
+              <h3 class="project-name">ImpulWeb</h3>
+              <span class="project-subtitle">Gestión financiera + IA</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <p class="project-desc">
+              Plataforma web de gestión financiera para pequeños negocios colombianos, 
+              con un agente de análisis financiero potenciado por inteligencia artificial. 
+              Stack moderno con Laravel 12, Blade + Tailwind y Vite.
+            </p>
+            <div class="project-stack">
+              <span class="stack-badge">Laravel 12</span>
+              <span class="stack-badge">PHP 8.3</span>
+              <span class="stack-badge">Blade</span>
+              <span class="stack-badge">Tailwind</span>
+              <span class="stack-badge">MySQL</span>
+            </div>
+          </div>
+          <div class="project-footer">
+            <a href="https://github.com/isabellalopera75-cmd/ControlFinancias" target="_blank"
+               rel="noopener noreferrer" class="project-link">
+              <i class="ri-github-fill"></i> Ver código
+            </a>
           </div>
         </article>
 
         <!-- Banco de Personas -->
-        <article class="project-card reveal reveal-delay-1">
-          <div class="project-image">
-            <div class="project-image-content">
-              <i class="ri-smartphone-line project-icon" aria-hidden="true"></i>
-              <span class="project-image-label">App Android offline-first</span>
+        <article class="project-card reveal reveal-delay-3">
+          <div class="project-header">
+            <div class="project-icon-box">
+              <i class="ri-smartphone-line"></i>
             </div>
-            <div class="project-overlay"></div>
+            <div class="project-title-wrapper">
+              <h3 class="project-name">Banco de Personas</h3>
+              <span class="project-subtitle">Gestión offline de registros</span>
+            </div>
           </div>
           <div class="project-body">
-            <h3 class="project-name">Banco de Personas</h3>
-            <span class="project-subtitle">Registrocc — Gestión offline de registros</span>
             <p class="project-desc">
               App Android offline-first para gestión de registros de personas. 
               Arquitectura Clean Architecture + MVVM con Room para persistencia local 
@@ -361,48 +431,13 @@
               <span class="stack-badge">Hilt</span>
               <span class="stack-badge">Retrofit</span>
               <span class="stack-badge">Node.js</span>
-              <span class="stack-badge">PostgreSQL</span>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/isabellalopera75-cmd/Banco-Personas" target="_blank"
-                 rel="noopener noreferrer" class="project-link">
-                <i class="ri-github-fill"></i> Ver código
-              </a>
             </div>
           </div>
-        </article>
-
-        <!-- ImpulWeb -->
-        <article class="project-card reveal reveal-delay-2">
-          <div class="project-image">
-            <div class="project-image-content">
-              <i class="ri-bar-chart-grouped-line project-icon" aria-hidden="true"></i>
-              <span class="project-image-label">Plataforma financiera con IA</span>
-            </div>
-            <div class="project-overlay"></div>
-          </div>
-          <div class="project-body">
-            <h3 class="project-name">ImpulWeb</h3>
-            <span class="project-subtitle">ControlFinancias — Gestión financiera + IA</span>
-            <p class="project-desc">
-              Plataforma web de gestión financiera para pequeños negocios colombianos, 
-              con un agente de análisis financiero potenciado por inteligencia artificial. 
-              Stack moderno con Laravel 12, Blade + Tailwind y Vite.
-            </p>
-            <div class="project-stack">
-              <span class="stack-badge">Laravel 12</span>
-              <span class="stack-badge">PHP 8.3</span>
-              <span class="stack-badge">Blade</span>
-              <span class="stack-badge">Tailwind</span>
-              <span class="stack-badge">Vite</span>
-              <span class="stack-badge">MySQL</span>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/isabellalopera75-cmd/ControlFinancias" target="_blank"
-                 rel="noopener noreferrer" class="project-link">
-                <i class="ri-github-fill"></i> Ver código
-              </a>
-            </div>
+          <div class="project-footer">
+            <a href="https://github.com/isabellalopera75-cmd/Banco-Personas" target="_blank"
+               rel="noopener noreferrer" class="project-link">
+              <i class="ri-github-fill"></i> Ver código
+            </a>
           </div>
         </article>
       </div>
@@ -421,7 +456,7 @@
       <div class="timeline">
         <div class="timeline-item reveal">
           <div class="timeline-dot"></div>
-          <span class="timeline-date">2024</span>
+          <span class="timeline-date">2025</span>
           <h3 class="timeline-title">Inicio formación</h3>
           <p class="timeline-desc">
             Ingreso al programa de Análisis y Desarrollo de Software (ADSO) en el 
@@ -431,7 +466,7 @@
 
         <div class="timeline-item reveal reveal-delay-1">
           <div class="timeline-dot"></div>
-          <span class="timeline-date">2024</span>
+          <span class="timeline-date">2025</span>
           <h3 class="timeline-title">Aprendizaje Frontend con Oscar Mopan</h3>
           <p class="timeline-desc">
             Bases de desarrollo web frontend, estructuración de interfaces y diseño visual bajo la orientación del instructor Oscar Mopan.
@@ -440,7 +475,7 @@
 
         <div class="timeline-item reveal reveal-delay-2">
           <div class="timeline-dot"></div>
-          <span class="timeline-date">2025</span>
+          <span class="timeline-date">2026</span>
           <h3 class="timeline-title">Formación bajo instructor Oscar Yanguas</h3>
           <p class="timeline-desc">
             Desarrollo de competencias técnicas en desarrollo full-stack, buenas prácticas, 
@@ -450,7 +485,7 @@
 
         <div class="timeline-item reveal reveal-delay-3">
           <div class="timeline-dot"></div>
-          <span class="timeline-date">2025</span>
+          <span class="timeline-date">2026</span>
           <h3 class="timeline-title">Proyecto ImpulWeb</h3>
           <p class="timeline-desc">
             Plataforma web con Laravel 12 para gestión financiera de negocios 
@@ -460,7 +495,7 @@
 
         <div class="timeline-item reveal reveal-delay-4">
           <div class="timeline-dot"></div>
-          <span class="timeline-date">2025</span>
+          <span class="timeline-date">2026</span>
           <h3 class="timeline-title">Proyecto CollTrash</h3>
           <p class="timeline-desc">
             Sistema de gestión de rutas de recolección de basuras para 
@@ -470,7 +505,17 @@
 
         <div class="timeline-item reveal reveal-delay-4">
           <div class="timeline-dot"></div>
-          <span class="timeline-date">2025</span>
+          <span class="timeline-date">2026</span>
+          <h3 class="timeline-title">Proyecto Juicios Evaluativos</h3>
+          <p class="timeline-desc">
+            Desarrollo de un sistema web para el análisis del progreso de los aprendices, 
+            integrando importación desde Excel y tableros gráficos con PHP y MySQL.
+          </p>
+        </div>
+
+        <div class="timeline-item reveal reveal-delay-4">
+          <div class="timeline-dot"></div>
+          <span class="timeline-date">2026</span>
           <h3 class="timeline-title">Proyecto Banco de Personas</h3>
           <p class="timeline-desc">
             Desarrollo de app Android con patrón offline-first, implementando 

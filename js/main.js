@@ -116,50 +116,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 
-  // ────────────────────────────────────────────────
-  // Hero typing effect
-  // ────────────────────────────────────────────────
-  const typingEl = document.getElementById('typing-text');
-  const phrases = [
-    'Desarrolladora Full-Stack en formación',
-    'Aprendiz ADSO · SENA',
-    'Creando soluciones reales con código',
-    'Backend + Frontend + Bases de datos'
-  ];
-
-  if (typingEl) {
-    let phraseIndex = 0;
-    let charIndex = 0;
-    let isDeleting = false;
-    let speed = 70;
-
-    function type() {
-      const current = phrases[phraseIndex];
-
-      if (isDeleting) {
-        typingEl.textContent = current.substring(0, charIndex - 1);
-        charIndex--;
-        speed = 35;
-      } else {
-        typingEl.textContent = current.substring(0, charIndex + 1);
-        charIndex++;
-        speed = 70;
-      }
-
-      if (!isDeleting && charIndex === current.length) {
-        speed = 2000; // Pause at end
-        isDeleting = true;
-      } else if (isDeleting && charIndex === 0) {
-        isDeleting = false;
-        phraseIndex = (phraseIndex + 1) % phrases.length;
-        speed = 400;
-      }
-
-      setTimeout(type, speed);
-    }
-
-    type();
-  }
 
 
   // ────────────────────────────────────────────────
