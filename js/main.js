@@ -291,10 +291,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.style.overflow = '';
   }
 
-  // Triggers: hero button + about img
-  document.getElementById('hero-avatar-btn')
-    ?.addEventListener('click', openLightbox);
-
+  // Triggers: about img
   const aboutAvatar = document.getElementById('about-avatar-img');
   aboutAvatar?.addEventListener('click', openLightbox);
   aboutAvatar?.addEventListener('keydown', (e) => {
