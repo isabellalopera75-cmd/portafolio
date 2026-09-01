@@ -116,35 +116,18 @@
         </div>
 
         <div class="hero-visual hero-reveal hero-reveal-delay-4">
-          <div class="tech-orbit">
-            <div class="orbit-center">
-              <i class="ri-braces-line"></i>
+          <button class="hero-avatar-btn" id="hero-avatar-btn" aria-label="Ver foto de perfil">
+            <div class="hero-avatar-ring"></div>
+            <div class="hero-avatar-ring ring-2"></div>
+            <img
+              src="assets/foto-perfil.jpeg"
+              alt="Isabella Lopera Ayala"
+              class="hero-avatar-img"
+            >
+            <div class="hero-avatar-overlay">
+              <i class="ri-zoom-in-line"></i>
             </div>
-            
-            <div class="orbit-path path-1">
-              <div class="orbit-item">
-                <i class="ri-reactjs-line"></i>
-              </div>
-            </div>
-            
-            <div class="orbit-path path-2">
-              <div class="orbit-item item-node">
-                <i class="ri-nodejs-line"></i>
-              </div>
-              <div class="orbit-item item-php">
-                <i class="ri-terminal-box-line"></i>
-              </div>
-            </div>
-            
-            <div class="orbit-path path-3">
-              <div class="orbit-item item-db">
-                <i class="ri-database-2-line"></i>
-              </div>
-              <div class="orbit-item item-git">
-                <i class="ri-github-fill"></i>
-              </div>
-            </div>
-          </div>
+          </button>
         </div>
       </div>
     </div>
@@ -158,8 +141,15 @@
         <div class="about-visual reveal">
           <div class="about-avatar-wrapper">
             <div class="about-avatar-frame">
-              <!-- Reemplaza la ruta con tu foto real, por ejemplo: assets/perfil.jpg -->
-              <img src="https://ui-avatars.com/api/?name=Isabella+Lopera&background=221c27&color=f58ac0&size=400" alt="Isabella Lopera Ayala" class="about-avatar-img">
+              <img
+                src="assets/foto-perfil.jpeg"
+                alt="Isabella Lopera Ayala"
+                class="about-avatar-img profile-clickable"
+                id="about-avatar-img"
+                role="button"
+                tabindex="0"
+                aria-label="Ver foto de perfil"
+              >
             </div>
             <div class="about-badge">
               <i class="ri-graduation-cap-fill"></i>
@@ -641,6 +631,17 @@
   <button class="back-to-top" id="back-to-top" aria-label="Volver arriba">
     <i class="ri-arrow-up-line"></i>
   </button>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Foto de perfil">
+    <div class="lightbox-backdrop" id="lightbox-backdrop"></div>
+    <div class="lightbox-container">
+      <button class="lightbox-close" id="lightbox-close" aria-label="Cerrar">
+        <i class="ri-close-line"></i>
+      </button>
+      <img src="assets/foto-perfil.jpeg" alt="Isabella Lopera Ayala" class="lightbox-img" id="lightbox-img">
+    </div>
+  </div>
 
   <!-- Scripts -->
   <script src="js/main.js"></script>
