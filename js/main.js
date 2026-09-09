@@ -273,36 +273,4 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // ────────────────────────────────────────────────
-  // Lightbox (WhatsApp-style photo viewer)
-  // ────────────────────────────────────────────────
-  const lightbox       = document.getElementById('lightbox');
-  const lightboxClose  = document.getElementById('lightbox-close');
-  const lightboxBack   = document.getElementById('lightbox-backdrop');
-
-  function openLightbox() {
-    lightbox.classList.add('open');
-    document.body.style.overflow = 'hidden';
-    lightboxClose.focus();
-  }
-
-  function closeLightbox() {
-    lightbox.classList.remove('open');
-    document.body.style.overflow = '';
-  }
-
-  // Triggers: about img
-  const aboutAvatar = document.getElementById('about-avatar-img');
-  aboutAvatar?.addEventListener('click', openLightbox);
-  aboutAvatar?.addEventListener('keydown', (e) => {
-    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openLightbox(); }
-  });
-
-  // Close handlers
-  lightboxClose?.addEventListener('click', closeLightbox);
-  lightboxBack?.addEventListener('click', closeLightbox);
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && lightbox.classList.contains('open')) closeLightbox();
-  });
-
 });
