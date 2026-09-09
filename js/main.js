@@ -216,40 +216,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 
-  // ────────────────────────────────────────────────
-  // Custom cursor (desktop only)
-  // ────────────────────────────────────────────────
-  const cursorDot = document.querySelector('.cursor-dot');
-  const cursorRing = document.querySelector('.cursor-ring');
-
-  if (cursorDot && cursorRing && window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
-    let mouseX = 0, mouseY = 0;
-    let ringX = 0, ringY = 0;
-
-    document.addEventListener('mousemove', (e) => {
-      mouseX = e.clientX;
-      mouseY = e.clientY;
-      cursorDot.style.left = mouseX + 'px';
-      cursorDot.style.top = mouseY + 'px';
-      cursorDot.style.transform = 'translate(-50%, -50%)';
-    });
-
-    function animateRing() {
-      ringX += (mouseX - ringX) * 0.15;
-      ringY += (mouseY - ringY) * 0.15;
-      cursorRing.style.left = ringX + 'px';
-      cursorRing.style.top = ringY + 'px';
-      cursorRing.style.transform = 'translate(-50%, -50%)';
-      requestAnimationFrame(animateRing);
-    }
-    animateRing();
-
-    // Hover effect on interactive elements
-    document.querySelectorAll('a, button, .project-card, .skill-card').forEach(el => {
-      el.addEventListener('mouseenter', () => cursorRing.classList.add('hovering'));
-      el.addEventListener('mouseleave', () => cursorRing.classList.remove('hovering'));
-    });
-  }
 
   // ────────────────────────────────────────────────
   // Dynamic year in footer
