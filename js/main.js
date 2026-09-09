@@ -34,6 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Navbar scroll effect
   // ────────────────────────────────────────────────
   const navbar = document.getElementById('navbar');
+  const scrollProgress = document.getElementById('scroll-progress');
   const backToTop = document.getElementById('back-to-top');
 
   function onScroll() {
@@ -46,6 +47,10 @@ document.addEventListener('DOMContentLoaded', () => {
       navbar.classList.toggle('scrolled', scrollTop > 50);
     }
 
+    // Scroll progress bar
+    if (scrollProgress) {
+      scrollProgress.style.width = progress + '%';
+    }
 
     // Back-to-top button
     if (backToTop) {
